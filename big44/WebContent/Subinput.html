@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table border="1">
+<tr class ="t1" align="center">
+<td><font size="20">등록</font></td>
+<td><font size="20">수정</font></td>
+<td><font size="20">검색</font></td>
+<td><font size="20">삭제</font></td>
+<td rowspan="2">
+<form action = "Subselectall.jsp">
+<input type="submit" value="<<<<<전체검색>>>>>"><br>
+</form>
+</td>
+</tr>
+<tr class = "t2">
+<td>
+<form action = "Subinsert.jsp">
+id: <Br> <input type="text"  name="voteId"><br>
+투표자 이름: <Br><input type="text" name="voteName"><br>
+투표 내용:  <Br><input type="text" name="voteContent"><br>
+투표 날짜: <Br> <input type="text" name="voteDate"><br>
+<input type="submit" value="서버로 전송"><br>
+</form><br>
+</td>
+<td valign="top">
+<form action = "Subupdate.jsp">
+id: <Br><input type="text" name="voteId"><br>
+변경할 데이터: <select name = "s">
+<option value="voteName">이름 </option>
+<option value="voteContent">내용 </option>
+<option value="voteDate">날짜 </option>
+</select>
+<br>
+<input type="text" name = "voteName"><br>
+<input type="submit" value="수정"><br>
+</form><br>
+</td>
+<td valign="top">
+<form action = "Subselect.jsp">
+id: <br><input type="text" name="voteId"><br>
+<input type="submit" value="검색"><br>
+</form>
+</td>
+<td valign="top">
+<form action = "Subdelete.jsp">
+id: <br><input type="text" name="voteId"><br>
+<input type="submit" value="삭제"><br>
+</form>
+</tr>
+
+</table>
+
+
+
+</body>
+</html>
